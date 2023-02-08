@@ -41,7 +41,7 @@ def main():
         def load_lottiefile(filepath: str):
             with open (filepath, "r") as f:
                 return json.load(f)
-        hello_lt = load_lottiefile(r'C:\123me\projects\ML\health insurance price prediction project\hello.json')
+        hello_lt = load_lottiefile(r'C:/123me/projects/ML/health insurance price prediction project/hello.json')
         st_lottie(
             hello_lt,
             height=100,
