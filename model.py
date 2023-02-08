@@ -31,6 +31,6 @@ model = RandomForestClassifier()
 model.fit(X_train, y_train)
 #dtr.fit(X_train, y_train)
 
-pickle_out = open(r"C:\123me\projects\ML\health insurance price prediction project\model.pkl", "wb")
+pickle_out = open(r"C:/123me/projects/ML/health insurance price prediction project/model.pkl", "wb")
 pickle.dump(model, pickle_out)
 pickle_out.close()
