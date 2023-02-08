@@ -8,7 +8,7 @@ from sklearn.ensemble import RandomForestClassifier
 
 
 # reading the data.
-df = pd.read_csv(r'C:\123me\projects\ML\health insurance price prediction project\health.csv')
+df = pd.read_csv(r'C:/123me/projects/ML/health insurance price prediction project/health.csv')
 
 X = df.drop('PremiumPrice', axis=1)
 Y = df['PremiumPrice']
