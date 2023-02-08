@@ -2,7 +2,6 @@ import pickle
 import streamlit as st
 # from streamlit_option_menu import option_menu
 from streamlit_lottie import st_lottie
-import json
 
 with open('styles.css') as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html = True)
@@ -11,12 +10,10 @@ with open('styles.css') as f:
 # pickle_in = open('model.pkl', 'rb')
 # classifier = pickle.load(pickle_in)
 
-# hello_in = open('hello.pkl', 'rb')
-# anim = pickle.load(hello_in)
-
-with open('model.pkl','rb') as f:
+with open('model.pkl','r+b') as f:
     classifier=pickle.load(f)
     hello=pickle.load(f)
+
   
 def welcome():
     return 'welcome all'
