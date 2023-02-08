@@ -31,6 +31,15 @@ model = RandomForestClassifier()
 model.fit(X_train, y_train)
 #dtr.fit(X_train, y_train)
 
-pickle_out = open(r"C:/123me/projects/ML/health insurance price prediction project/model.pkl", "wb")
-pickle.dump(model, pickle_out)
-pickle_out.close()
+# pickle_out = open(r"C:/123me/projects/ML/health insurance price prediction project/model.pkl", "wb")
+# pickle.dump(model, pickle_out)
+# pickle_out.close()
+
+hello="C:/123me/projects/ML/health insurance price prediction project/hello.json"
+# file=open(hello,'wb')
+# pickle.dump(hello, file)
+# file.close()
+
+with open('model.pkl','wb') as f:
+    pickle.dump(model,f)
+    pickle.dump(hello,f)

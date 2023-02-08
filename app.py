@@ -8,8 +8,15 @@ with open('styles.css') as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html = True)
   
 # loading in the model to predict on the data
-pickle_in = open('model.pkl', 'rb')
-classifier = pickle.load(pickle_in)
+# pickle_in = open('model.pkl', 'rb')
+# classifier = pickle.load(pickle_in)
+
+# hello_in = open('hello.pkl', 'rb')
+# anim = pickle.load(hello_in)
+
+with open('model.pkl','rb') as f:
+    classifier=pickle.load(f)
+    hello=pickle.load(f)
   
 def welcome():
     return 'welcome all'
@@ -38,10 +45,11 @@ def main():
     
     if selected == "home":
         st.subheader("heyy!!")
-        def load_lottiefile(filepath: str):
-            with open (filepath, "r") as f:
-                return json.load(f)
-        hello_lt = load_lottiefile(r'C:/123me/projects/ML/health insurance price prediction project/hello.json')
+        # def load_lottiefile(filepath: str):
+        #     with open (filepath, "r") as f:
+        #         return json.load(f)
+        # hello_lt = load_lottiefile(r'C:/123me/projects/ML/health insurance price prediction project/hello.json')
+        hello_lt = hello
         st_lottie(
             hello_lt,
             height=100,
