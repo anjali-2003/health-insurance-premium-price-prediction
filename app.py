@@ -46,12 +46,13 @@ def main():
         #     with open (filepath, "r") as f:
         #         return json.load(f)
         # hello_lt = load_lottiefile(r'C:/123me/projects/ML/health insurance price prediction project/hello.json')
-        hello_lt = hello
-        st_lottie(
-            hello_lt,
-            height=100,
-            width=100
-        )
+        # hello_lt = hello
+        # st_lottie(
+        #     hello_lt,
+        #     height=100,
+        #     width=100
+        # )
+        st.subheader("Go to predict page on the side pannel to predict the insurance price!!")
     
     if selected == "predict":
         html_temp = """
