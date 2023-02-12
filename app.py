@@ -110,7 +110,7 @@ def main():
       
         if st.button("Predict"):
             result = prediction(float(Age), float(Diabetes), float(BP), float(Transplants), float(ChronicDiseases), float(Height), float(Weight), float(KnownAllergies), float(HistoryOfCancerInFamily), float(NumberOfMajorSurgeries))
-            st.success('The output(in lakhs per year) is {}'.format(result))
+            st.success('The output(in lakhs) is {}'.format(result))
     if selected == "contact": 
         st.header("reach us at: 123@b.com")
      
